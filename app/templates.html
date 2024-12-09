@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Coda</title>
+</head>
+<body>
+    <h1>Upload Your Code</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <!-- Text Area for Pasting Code -->
+        <label for="code">Paste your code here:</label><br>
+        <textarea name="code" id="code" rows="10" cols="50" placeholder="Paste your code here:"></textarea>
+        <br><br>
+
+        <!-- File Input for Uploading Code -->
+        <label for="code_file">Or upload a file:</label><br>
+        <input type="file" name="code_file" id="code_file" accept=".py, .txt">
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Analyze Code</button>
+
+    </form>
+
+</body>
+</html>
